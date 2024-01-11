@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="ig">
+            <img src="pngwing.com.png" alt="" class="logo">
+        </div>
+        <input type="text" class="txt" id="cityInput" placeholder="Enter a city" required>
+        <button class="btn" id="getWeatherButton">Check</button>
+        <div id="weatherInfo" class="weather-container">
+            <h2>Weather in <span id="city-name"></span></h2>
+            <div class="weather-info">
+                <div class="info-item">
+                    <p>Temperature:</p>
+                    <p><span id="temperature"></span>°C</p>
+                </div>
+                <div class="info-item">
+                    <p>Feels Like:</p>
+                    <p><span id="feels-like"></span>°C</p>
+                </div>
+                <div class="info-item">
+                    <p>Humidity:</p>
+                    <p><span id="humidity"></span>%</p>
+                </div>
+                <div class="info-item">
+                    <p>Min Temperature:</p>
+                    <p><span id="min-temperature"></span>°C</p>
+                </div>
+                <div class="info-item">
+                    <p>Max Temperature:</p>
+                    <p><span id="max-temperature"></span>°C</p>
+                </div>
+                <div class="info-item">
+                    <p>Wind Speed:</p>
+                    <p><span id="wind-speed"></span> m/s</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
